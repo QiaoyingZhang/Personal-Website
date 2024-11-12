@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qiaoying (Annie) Zhang - Data Scientist Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside class="sidebar">
+            <img src="{{ url_for('static', filename='socials/QZhang-profile-pic.jpg') }}" alt="Qiaoying Zhang" class="profile-img">
+            <h1>Qiaoying(Annie) Zhang</h1>
+            <p>Data Scientist</p>
+            <p>Based in Palo Alto, CA</p>
+
+            <!-- Social Icons -->
+            <div class="social-links">
+                <a href="https://github.com/QiaoyingZhang" target="_blank">
+                    <img src="{{ url_for('static', filename='socials/github-icon.png') }}" alt="GitHub">
+                </a>
+                <a href="https://www.kaggle.com/qiaoyingzhang" target="_blank">
+                    <img src="{{ url_for('static', filename='socials/kaggle-icon.png') }}" alt="Kaggle">
+                </a>
+                <a href="https://www.linkedin.com/in/qiaoying-zhang" target="_blank">
+                    <img src="{{ url_for('static', filename='socials/linkedin-icon.png') }}" alt="LinkedIn">
+                </a>
+                <a href="mailto:zqiaoying2000@gmail.com">
+                    <img src="{{ url_for('static', filename='socials/email-icon.png') }}" alt="Email">
+                </a>
+            </div>
+
+            <section class="about">
+                <h2>About</h2>
+                <p>Data Scientist with a background in finance, healthcare, and legal domains, specializing in machine learning, time series forecasting, and deep learning.</p>
+            </section>
+
+            <section class="skills">
+                <h2>Skills</h2>
+                <span>Machine Learning</span>
+                <span>Data Engineering</span>
+                <span>Statisical Methods</span>
+                <span>NLP</span>
+                <span>Big Data</span>
+                <span>Data Visualization</span>
+                <span>Business Intelligence</span>
+                <span>Deep Learning Frameworks</span>
+            </section>
+
+            <!-- Programming Languages Section -->
+            <section class="languages">
+                <h2>Programming Languages</h2>
+                <div class="language">
+                    <span>Python</span>
+                    <div class="bar-container"><div class="bar-fill" style="width: 100%;"></div></div>
+                </div>
+                <div class="language">
+                    <span>R</span>
+                    <div class="bar-container"><div class="bar-fill" style="width: 100%;"></div></div>
+                </div>
+                <div class="language">
+                    <span>SQL</span>
+                    <div class="bar-container"><div class="bar-fill" style="width: 90%;"></div></div>
+                </div>
+                <div class="language">
+                    <span>Scala</span>
+                    <div class="bar-container"><div class="bar-fill" style="width: 75%;"></div></div>
+                </div>
+                <div class="language">
+                    <span>Java/JS</span>
+                    <div class="bar-container"><div class="bar-fill" style="width: 70%;"></div></div>
+                </div>
+            </section>
+
+            <!-- Language Fluency Section -->
+            <section class="languages">
+                <h2>Languages</h2>
+                <div class="language">
+                    <span>Cantonese</span>
+                    <div class="bar-container"><div class="bar-fill" style="width: 100%; background-color: #4caf50;"></div></div>
+                </div>
+                <div class="language">
+                    <span>Mandarin</span>
+                    <div class="bar-container"><div class="bar-fill" style="width: 100%; background-color: #4caf50;"></div></div>
+                </div>
+                <div class="language">
+                    <span>English</span>
+                    <div class="bar-container"><div class="bar-fill" style="width: 100%; background-color: #4caf50;"></div></div>
+                </div>
+                <div class="language">
+                    <span>Japanese</span>
+                    <div class="bar-container"><div class="bar-fill" style="width: 60%; background-color: #ffeb3b;"></div></div>
+                </div>
+            </section>
+        </aside>
+
+        <!-- Main Content Section -->
+        <main class="content">
+            <!-- Projects Section -->
+            <section class="projects">
+                <h2>Projects</h2>
+                <!-- Container for arrow buttons and project container -->
+                <div class="project-carousel">
+                    <!-- Left Arrow Button -->
+                    <button class="arrow-btn left-arrow" onclick="moveSlide('left')">&#10094;</button>
+
+                    <div class="project-scroll-container">
+                        <!-- Project 1 -->
+                        <div class="project-card">
+                            <img src="{{ url_for('static', filename='projects/OIP.png') }}" alt="Therapist App" class="project-img">
+                            <h3>Psychological Therapist App – Custom AI Models</h3>
+
+                            <!-- Skills for this project -->
+                            <div class="project-skill">
+                                <span>NLP</span>
+                                <span>TensorFlow</span>
+                                <span>Transformers</span>
+                                <span>Sentiment Analysis</span>
+                            </div>
+
+                            <p>Developed an AI-driven app for therapists, using NLP and sentiment analysis for detecting emotions and providing mental health support. Applied transformers and sequence models to enhance emotion detection accuracy.</p>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="project-card">
+                            <a href="https://github.com/QiaoyingZhang/Data-Science-Projects/tree/main/NVIDIA%20Stock%20Price%20Analysis%20and%20Forecasting" target="_blank">
+                                <img src="{{ url_for('static', filename='projects/nvidia-stock-preview.jpg') }}" alt="NVIDIA Stock Price Analysis" class="project-img">
+                            </a>
+                            <h3>NVIDIA Stock Price Analysis and Forecasting</h3>
+
+                            <!-- Skills for this project -->
+                            <div class="project-skill">
+                                <span>Time Series</span>
+                                <span>LSTM</span>
+                                <span>GRU</span>
+                                <span>Machine Learning</span>
+                                <span>ETL</span>
+                            </div>
+
+                            <p>Implemented time series forecasting and deep learning models (LSTM and GRU) to predict NVIDIA stock trends. Achieved accurate results by fine-tuning model hyperparameters and leveraging historical data.</p>
+
+                            <!-- Read more link -->
+                            <a href="https://github.com/QiaoyingZhang/Data-Science-Projects/tree/main/NVIDIA%20Stock%20Price%20Analysis%20and%20Forecasting" class="read-more-link" target="_blank">Read more →</a>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="project-card">
+                            <a href="https://www.kaggle.com/code/qiaoyingzhang/isic2024-model-ensemble-w-predicted-features/notebook" target="_blank">
+                                <img src="{{ url_for('static', filename='projects/skin-cancer-preview.jpg') }}" alt="Skin Cancer Detection" class="project-img">
+                            </a>
+                            <h3>Skin Cancer Detection – PyTorch Models</h3>
+
+                            <!-- Skills for this project -->
+                            <div class="project-skill">
+                                <span>Machine Learning</span>
+                                <span>Predictive Features</span>
+                                <span>Metrics</span>
+                                <span>Bioinformatics</span>
+                                <span>Ensemble</span>
+                            </div>
+
+                            <p>Created deep learning models with convolutional neural networks in PyTorch to classify skin lesions. Used data augmentation and transfer learning, achieving 95% classification accuracy.</p>
+
+                            <!-- Read more link -->
+                            <a href="https://www.kaggle.com/code/qiaoyingzhang/isic2024-model-ensemble-w-predicted-features/notebook" class="read-more-link" target="_blank">Read more →</a>
+                        </div>
+
+                        <!-- Project 4 -->
+                        <div class="project-card">
+                            <a href="https://www.kaggle.com/code/qiaoyingzhang/belka-1dcnn-with-all-data-20-folds-25-epoch" target="_blank">
+                                <img src="{{ url_for('static', filename='projects/protein-binding-preview.png') }}" alt="Protein-Ligand Binding" class="project-img">
+                            </a>
+                            <h3>Predict New Medicines with BELKA</h3>
+
+                            <!-- Skills for this project -->
+                            <div class="project-skill">
+                                <span>1D-CNN</span>
+                                <span>Chemical Encoding</span>
+                                <span>Bioinformatics</span>
+                                <span>TPU + GPU</span>
+                                <span>Model Weights Processing</span>
+                            </div>
+
+                            <p>**[Silver Medel]** Led a team to develop a 1D-CNN model for protein-ligand binding prediction, which accelerates the discovery of new medicines. Applied domain knowledge to curate datasets and optimize the model's predictive capability.</p>
+
+                            <!-- Read more link -->
+                            <a href="https://www.kaggle.com/code/qiaoyingzhang/belka-1dcnn-with-all-data-20-folds-25-epoch" class="read-more-link" target="_blank">Read more →</a>
+                        </div>
+
+                        <!-- Project 5 -->
+                        <div class="project-card">
+                            <a href="https://github.com/ttkart/Capstone-Proj" target="_blank">
+                                <img src="{{ url_for('static', filename='projects/airline-price-preview.png') }}" alt="Airline Price Prediction" class="project-img">
+                            </a>
+                            <h3>Airline Price Prediction</h3>
+
+                            <!-- Skills for this project -->
+                            <div class="project-skill">
+                                <span>Data Scraping</span>
+                                <span>Machine Learning</span>
+                                <span>Bagging</span>
+                                <span>Hypertuning Perameters</span>
+                            </div>
+
+                            <p>Utilized regression models and gradient boosting techniques to forecast airline prices, achieving a 92% accuracy rate. Integrated web scraping to gather real-time data for enhanced prediction.</p>
+
+                            <!-- Read more link -->
+                            <a href="https://github.com/ttkart/Capstone-Proj" class="read-more-link" target="_blank">Read more →</a>
+                        </div>
+                    </div>
+
+                    <!-- Right Arrow Button -->
+                    <button class="arrow-btn right-arrow" onclick="moveSlide('right')">&#10095;</button>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="experience">
+                <h2>Experience</h2>
+                <div>
+                    <h3>Data Science Intern</h3>
+                    <p><em>Xunxiang Equity Investment Management Co., Guangdong, China (Feb 2024 – Jun 2024)</em></p>
+                    <ul>
+                        <li>Improved predictive accuracy by 15% using time series analysis and machine learning models.</li>
+                        <li>Built ETL pipelines for seamless data integration.</li>
+                    </ul>
+
+                    <h3>Business Data Analyst</h3>
+                    <p><em>Lun & Associates Law Office, Palo Alto, CA (Sep 2022 – Jan 2024)</em></p>
+                    <ul>
+                        <li>Developed predictive models for case outcomes, increasing accuracy by 10%.</li>
+                        <li>Generated data-driven reports in Excel and Tableau.</li>
+                    </ul>
+
+                    <h3>Private Computer/Data Science Tutor</h3>
+                    <p><em>Freelance, Palo Alto, CA (Nov 2022 – Present)</em></p>
+                    <ul>
+                        <li>Mentored students on data science topics, with a 5-10% improvement in their grades.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="education">
+                <h2>Education</h2>
+                <div>
+                    <p><strong>Master of Data Science</strong>, University of California San Diego, San Diego, CA (Sep 2022 – Mar 2024)</p>
+                    <p>Specialized in machine learning, big data analytics, and deep learning. Completed coursework in natural language processing, data mining, and data visualization.</p>
+                </div>
+                <div>
+                    <p><strong>Bachelor of Arts in Medical Anthropology & Global Health</strong>, University of Washington, Seattle, WA (Sep 2018 – Mar 2022)</p>
+                    <p>Gained interdisciplinary insights into global health issues, human behavior, and social dynamics, with a minor in data science.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
